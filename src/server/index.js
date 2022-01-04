@@ -25,28 +25,6 @@ app.get('/', function (req, res) {
 })
 
 app.get('/test', function (req, res) {
-
-    // const formdata = new FormData();
-    // formdata.append("key", process.env.API_KEY);
-    // formdata.append("txt", "The restaurant was great even though it’s not near Madrid.");
-    // formdata.append("lang", "en");
-    
-    // const requestOptions = {
-    //     method: 'POST',
-    //     body: formdata,
-    //     redirect: 'follow'
-    // };
-
-    // const response = fetch("https://api.meaningcloud.com/sentiment-2.1", requestOptions)
-    //     .then(result => (
-    //         result.json()
-    //     ))
-    //     .then(result => {
-    //         console.log(result)
-    //         // res.send(result)
-    //     })
-    //     .catch(error => console.log('error', error));
-
     res.send(mockAPIResponse)
 })
 
